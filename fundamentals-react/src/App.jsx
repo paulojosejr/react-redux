@@ -1,6 +1,8 @@
 import './App.css'
 import React from 'react'
 
+import ProductsTable from './components/repeat/ProductsTable'
+import StudentsList from './components/repeat/StudentsList'
 import Family from './components/basics/Family'
 import FamilyMember from './components/basics/FamilyMember'
 import Card from './components/layout/Card'
@@ -14,7 +16,13 @@ export default function App(props) {
         <div className="App">
             <h1>React Fundamentals</h1>
             <div className="Cards">
-                <Card title="#04 - Components with Children" color="#00C8F8">
+                <Card title="#06 - Repeat Challenge" color="#055555">
+                    <ProductsTable></ProductsTable>
+                </Card>
+                <Card title="#06 - Repeat" color="#0FF55C">
+                    <StudentsList></StudentsList>
+                </Card>
+                <Card title="#05 - Components with Children" color="#00C8F8">
                     <Family surname="Silva">
                         <FamilyMember name="Pedro" />
                         <FamilyMember name="Ana" />
