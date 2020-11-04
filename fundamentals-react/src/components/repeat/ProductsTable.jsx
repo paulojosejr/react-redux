@@ -5,9 +5,9 @@ import './ProductsTable.css'
 // eslint-disable-next-line import/no-anonymous-default-export
 export default props => {
 
-    const tableProducts = products.map(product => {
+    const tableProducts = products.map((product, i )=> {
         return (
-            <tr key={product.id}>
+            <tr key={product.id} className={i % 2 === 0 ? 'even' : ''}>
                 <td>
                     {product.id}
                 </td>
@@ -15,7 +15,7 @@ export default props => {
                     {product.name}
                 </td>
                 <td>
-                    €{product.price.toFixed(2)}
+                    €{product.price.toFixed(2).replace('.', ',')}
                 </td>
             </tr>
         )
