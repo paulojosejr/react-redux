@@ -1,7 +1,8 @@
 import './App.css'
 import React from 'react'
 
-
+import IndirectFather from './components/communication/IndirectFather'
+import DirectFather from "./components/communication/DirectFather"
 import InfoUser from './components/conditional/InfoUser'
 import EvenOrOdd from './components/conditional/EvenOrOdd'
 import ProductsTable from './components/repeat/ProductsTable'
@@ -19,10 +20,14 @@ export default function App(props) {
         <div className="App">
             <h1>React Fundamentals</h1>
             <div className="Cards">
+                <Card title="#10 - Indirect Communication" color="#FF8810">
+                    <IndirectFather />
+                </Card>
+                <Card title="#09 - Direct Communication" color="#1F0110">
+                    <DirectFather />
+                </Card>
                 <Card title="#08 - Conditional Rendering" color="#119990">
                     <InfoUser user={{ name: 'Paulo'}}/>
-                    <InfoUser user={{ }}/>
-                    <InfoUser />
                     <EvenOrOdd number={21}/>
                 </Card>
                 <Card title="#07 - Repeat Challenge" color="#055555">
