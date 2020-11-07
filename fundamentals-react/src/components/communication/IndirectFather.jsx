@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { useState} from 'react'
 import IndirectChild from './IndirectChild'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default props => {
-    let name = '?'
-    let age = 0
-    let athletic = false
+    const [name, setName] = useState('?')
+    const [age, setAge] = useState(0)
+    const [athletic, setAthletic] = useState(false)
 
-    function info(nameParam, ageParam, athleticParam){
-        name = nameParam
-        age = ageParam
-        athletic = athleticParam
+    function info(name, age, athletic){
+        setName(name)
+        setAge(age)
+        setAthletic(athletic)
     }
 
     return (
