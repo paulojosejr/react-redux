@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 
+import Counter from './components/counter/Counter'
 import Input from './components/form/Input'
 import IndirectFather from './components/communication/IndirectFather'
 import DirectFather from "./components/communication/DirectFather"
@@ -21,6 +22,9 @@ export default function App(props) {
         <div className="App">
             <h1>React Fundamentals</h1>
             <div className="Cards">
+                <Card title="#12 - Counter" color="#FF0d01">
+                    <Counter startNumber= {10}/>
+                </Card>
                 <Card title="#11 - Controlled Component (input)" color="#FFDDC9">
                     <Input />
                 </Card>
