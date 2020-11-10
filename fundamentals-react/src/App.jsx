@@ -24,7 +24,7 @@ export default function App(props) {
             <h1>React Fundamentals</h1>
             <div className="Cards">
                 <Card title="#13 - Mega" color="#BADAB1">
-                    <Mega/>
+                    <Mega amount ={8}/>
                 </Card>
                 <Card title="#12 - Counter" color="#FF0d01">
                     <Counter startNumber= {10}/>
