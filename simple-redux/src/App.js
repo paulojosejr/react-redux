@@ -1,8 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Interval from './components/Interval'
-import Card from './components/Card'
+import Average from './components/Average'
+import Sum from './components/Sum'
+import Draw from './components/Draw'
+
 
 function App() {
   return (
@@ -12,15 +14,9 @@ function App() {
         <Interval />
       </div>
       <div className="line">
-        <Card title="Card 2" Green>
-          X
-        </Card>
-        <Card title="Card 3" Blue>
-          Y
-          </Card>
-        <Card title="Card 4" Purple>
-          Y
-          </Card>
+        <Average />
+        <Sum />
+        <Draw />
       </div>
     </div>
   );
