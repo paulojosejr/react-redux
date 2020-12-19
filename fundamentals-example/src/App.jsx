@@ -7,9 +7,21 @@ import WithParameter from './Components/WithParameter'
 import './Components/WithChild'
 import WithChild from './Components/WithChild'
 import Card from './Components/layout/Card'
+import Repeat from './Components/Repeat'
+import Conditional from './Components/Conditional'
+import ConditionalWithIf from './Components/ConditionalWithIf'
 
 export default (props) =>
     <div className="App">
+        <Card title="#06 - Component With Conditional 2.0">
+            <ConditionalWithIf number={10}/>
+        </Card>
+        <Card title="#05 - Component With Conditional 1.0">
+            <Conditional number={11}/>
+        </Card>
+        <Card title="#04 - Component With Repeat">
+            <Repeat/>
+        </Card>
         <Card title="#03 - Component With Child">
             <WithChild>
                 <ul>
